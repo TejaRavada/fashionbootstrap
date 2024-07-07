@@ -133,31 +133,31 @@
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-              <form id="contactForm" action="#">
-                  <div class="contact_form-container">
-                      <div>
-                          <div>
-                              <input type="text" id="fullName" placeholder="Full Name" />
-                          </div>
-                          <div>
-                              <input type="email" id="email" placeholder="Email " />
-                          </div>
-                          <div>
-                              <input type="text" id="phoneNumber" placeholder="Phone Number" />
-                          </div>
-                          <div class="">
-                              <input type="text" id="message" placeholder="Message" class="message_input" />
-                          </div>
-                          <div class="btn-box ">
-                              <button type="submit">
-                                  Send
-                              </button>
-                          </div>
-                      </div>
+            <form id="contactForm" action="#">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" id="fullName" placeholder="Full Name" />
                   </div>
-              </form>
+                  <div>
+                    <input type="email" id="email" placeholder="Email " />
+                  </div>
+                  <div>
+                    <input type="text" id="phoneNumber" placeholder="Phone Number" />
+                  </div>
+                  <div class="">
+                    <input type="text" id="message" placeholder="Message" class="message_input" />
+                  </div>
+                  <div class="btn-box ">
+                    <button type="submit">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-      </div>
+        </div>
       </div>
     </div>
   </section>
@@ -286,25 +286,25 @@
   <script src="js/custom.js"></script>
 
   <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        var fullName = document.getElementById('fullName').value;
-        var email = document.getElementById('email').value;
-        var phoneNumber = document.getElementById('phoneNumber').value;
-        var message = document.getElementById('message').value;
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var fullName = document.getElementById('fullName').value;
+      var email = document.getElementById('email').value;
+      var phoneNumber = document.getElementById('phoneNumber').value;
+      var message = document.getElementById('message').value;
 
-        if (fullName === "" || email === "" || phoneNumber === "" || message === "") {
-            alert("All fields are required.");
-        } else {
-            alert('Form submitted successfully!');
-            // Clear the form fields
-            document.getElementById('fullName').value = "";
-            document.getElementById('email').value = "";
-            document.getElementById('phoneNumber').value = "";
-            document.getElementById('message').value = "";
-        }
+      if (fullName === "" || email === "" || phoneNumber === "" || message === "") {
+        alert("All fields are required.");
+      } else {
+        alert('Form submitted successfully!');
+        // Clear the form fields
+        document.getElementById('fullName').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('phoneNumber').value = "";
+        document.getElementById('message').value = "";
+      }
     });
-</script>
+  </script>
 
 </body>
 
